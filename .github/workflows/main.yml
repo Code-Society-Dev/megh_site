@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push on main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.server_deploy }}
+        username: ${{ secrets.user_deploy }}
+        password: ${{ secrets.pwd_deploy }}
+        local-dir: ./dist/
+        server-dir: ${{ secrets.domain_deploy }}
+        port: 21
