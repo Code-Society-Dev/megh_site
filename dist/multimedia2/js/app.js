@@ -38,7 +38,7 @@ AFRAME.registerComponent('shootable', {
     init: function () {
         this.el.addEventListener('click', () => {
             this.el.parentNode.removeChild(this.el)
-            document.querySelector('[text]').setAttribute('value', `${++score} meteoritos cazados`)
+            document.querySelector('[text]').setAttribute('value', `${++score} meteoritos apuntados`)
         })
     }
 })
