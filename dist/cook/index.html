@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ImpossibleCoking</title>
+    <title>Unity WebGL Player | Cocina Imposible</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ImpossibleCoking</div>
+        <div id="unity-build-title">Cocina Imposible</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Impossible Cooking Web.loader.js";
+      var loaderUrl = buildUrl + "/ImpossibleCookingWEB.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Impossible Cooking Web.data",
-        frameworkUrl: buildUrl + "/Impossible Cooking Web.framework.js",
-        codeUrl: buildUrl + "/Impossible Cooking Web.wasm",
+        dataUrl: buildUrl + "/ImpossibleCookingWEB.data.unityweb",
+        frameworkUrl: buildUrl + "/ImpossibleCookingWEB.framework.js.unityweb",
+        codeUrl: buildUrl + "/ImpossibleCookingWEB.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Ancoza",
-        productName: "ImpossibleCoking",
-        productVersion: "1.0",
+        productName: "Cocina Imposible",
+        productVersion: "1.3",
         showBanner: unityShowBanner,
       };
 
@@ -85,6 +85,7 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
+      canvas.style.background = "url('" + buildUrl + "/ImpossibleCookingWEB.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
