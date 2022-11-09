@@ -1,0 +1,772 @@
+ /*Estilos generales*/
+
+ html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.09rem;
+}
+
+/*Modificar el modelo de cajas CSS*/
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+-webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/*Resetear margenes y padding*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Centrar elementos en pantalla*/
+
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/*Estilos de los textos*/
+h2 {
+    font-size: 1.45rem;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    padding-right: 1em;
+    margin-bottom: 25px;
+}
+
+/*Estilos de los botones*/
+
+.btn {
+    display: block;
+    background-color: #ffa600;
+    width: 250px;
+    padding: 12px 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffa600;
+}
+
+.btn5 {
+    background-color: #ffa600;
+    width: 250px;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: #fff;
+}
+
+#seccion-tercera div a {
+    display: block;
+    text-align: center;
+    width: 250px;
+    border: 1px solid #ffa600;
+    padding: 12px 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+#seccion-tercera div a:hover {
+    background-color: #ffa600;
+}
+
+/*Barra de navegacion*/
+
+#nav-bar {
+background-color: #0b1245;
+}
+
+#navegacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+#main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 0.9em;
+    display: inline-block;
+}
+
+#main-nav li:last-child {
+    color: #ffa600;
+    padding: 25px 0.9em;
+}
+
+#main-nav li a:hover {
+    background-color: #060829;
+}
+
+#navbar-toggle {
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 62px;
+    right: 35px;
+    display: none;
+}
+
+.top {
+    display: none;
+}
+
+/*Pie de pagina*/
+
+footer {
+background-color: #121018;
+}
+
+#piedepagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0;
+}
+
+footer h3 {
+    color: #9f9f9f;
+    font-size: 0.90rem;
+    text-transform: uppercase;
+}
+
+footer ul {
+    margin: 20px 0;
+}
+
+footer li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+footer ul li a {
+    color: #9f9f9f;
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+
+footer a img {
+    width: 160px;
+}
+
+#social {
+    text-align: center;
+}
+
+#social .fab {
+    color: #fff;
+    margin-left: 1em;
+    font-size: 1.5rem;
+}
+
+#copyright {
+    color: #9f9f9f;
+    text-align: center;
+    font-size: 0.80rem;
+    border-top: 1px solid #272323;
+    padding: 12px 0;
+}
+
+/*Estilos de la pagina de inicio*/
+
+/*Seccion primera*/
+
+article#home > section:nth-child(1) {
+    background-image: url(../images/gavel-book.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#seccion-primera {
+    height: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#seccion-primera h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: arial, verdana, sans-serif;
+}
+
+#seccion-primera p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+#seccion-primera div {
+    text-align: center;
+}
+
+#seccion-primera a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid;
+    display: inline-block;
+    padding: 12px 2.5em;
+    margin: 12px 0 0;
+}
+
+#seccion-primera a:hover {
+    background-color: #aeaeae;
+    color: #000;
+}
+
+/*Seccion segunda*/
+
+#seccion-segunda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 80px 0;
+}
+
+#seccion-segunda div {
+    padding: 0 0.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+}
+
+#seccion-segunda img {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 40%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+#seccion-primera div p {
+    margin: 0;
+}
+
+/*Seccion tercera*/
+
+article > section:nth-child(3) {
+    background-color: #e2dddd;
+}
+
+#seccion-tercera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#seccion-tercera.container {
+    width: 100%;
+}
+
+#seccion-tercera div {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 2em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+/*Seccion cuarta*/  
+
+article > section:nth-child(4) {
+    text-align: center;
+    padding: 80px 0 12px;
+}
+
+#seccion-quarta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto;
+}
+
+.col {
+    margin: 0 0.9em;
+}
+
+.col .fa-solid.fa-briefcase-medical {
+    color: #ffa600;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.col .fa-solid.fa-car-burst {
+    color: #ffa600;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.col .fa-solid.fa-wheelchair {
+    color: #ffa600;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.col .fa-solid.fa-user-doctor {
+    color: #ffa600;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.col h3 {
+    margin-bottom: 12px;
+    color: #3c3c3c;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.col p {
+    font-size: 0.86rem;
+    text-align: justify;
+}
+/*Seccion quinta*/  
+
+article > section:nth-child(5) {
+    background-color: #e2dddd;
+}
+
+#seccion-quinta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/*Estilo de las paginas*/
+
+main header {
+    background-color: #e69807;
+    padding: 45px 0;
+    margin-bottom: 40px;
+}
+
+main header h1 {
+    font-size: 1.90rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-bottom: 80px;
+}
+
+#pages section {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+}
+
+aside {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+}
+
+#pages section {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding-right: 1em;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+aside h3 {
+    background-color: #f3f1fe;
+    padding: 12px 0 12px 0.5em;
+    margin-bottom: 20px;
+    font-size: 1.20rem;
+    font-weight: 100;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0 0 30px 0.5em;
+}
+
+aside ul li a {
+    text-decoration: none;
+    line-height: 1.8;
+    color: #0b1245;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+#social-media {
+    margin: 0 0 25px 0.5em;
+    font-size: 2rem;
+}
+
+#social-media i {
+    margin-right: 0.80em;
+    color: #0b1245;
+}
+
+#boletim {
+    margin-left: 0.5em;
+}
+
+#boletim p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+#boletim label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#correo {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 12px;
+}
+
+#boletim input[type="submit"] {
+    background-color: #008000;
+    display: inline-block;
+    padding: 10px 1em;
+    color: #fff;
+    border: none;
+    width: 150px;
+    font-size: 0.95rem;
+}
+
+.fila {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.fila img {
+    float: left;
+    width: 55%;
+    margin-right: 1em;
+    margin-bottom: 12px;
+}
+
+.fila i {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #0b1245;
+    font-family: ;
+}
+
+.transparent {
+    display: inline-block;
+    background-color: #ffa600;
+    width: 250px;
+    padding: 12px 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ffa600;
+}
+
+.transparent:hover {
+    background-color: #fff;
+}
+
+.asterisco {
+    color: #ff0000;
+}
+
+form {
+    margin-right: 12px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.98rem;
+}
+
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+#comentario {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    background-color: #008000;
+    display: inline-block;
+    padding: 10px 1em;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 1199px) {
+body {
+    font-size: 0.95rem;
+}
+}
+
+/*Aplicar los siguientes estilos cuando el viewport tenga un tamaño que oscile entre 960px - 1199px*/
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+
+    
+
+    #seccion-primera h1 {
+        font-size: 2.5rem;
+    }
+
+    #seccion-primera div p {
+        font-size: 1.25rem;
+    }
+
+    #seccion-tercera img {
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+        max-width: 45%;
+    }
+
+    #seccion-tercera div {
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .col p {
+        text-align: center;
+    }
+
+    #pages section {
+        margin-bottom: 12px;
+    }
+
+    .fila {
+        clear: both;
+        overflow: hidden;
+        margin: 0 0 25px;
+    }
+
+    .fila img {
+        float: none;
+        width: 100%;
+    }
+
+    #pages .fila:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .transparent {
+        margin-bottom: 30px;
+    }
+}
+
+/*Aplicar los estilos cuando el tamaño del viewport sea menor o igual 959px*/
+
+@media screen and (max-width: 959px) {
+    #navegacion {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #navbar-toggle {
+        display: block;
+    }
+
+    #main-nav li:not(:last-child) {
+        border-bottom: 1px solid #353535;
+    }
+
+    #main-nav li:last-child {
+        display: none;
+    }
+
+    .top {
+        background: #000;
+        color: #ffa600;
+        padding: 12px 0;
+        font-size: 0.85rem;
+        display: block;
+    }
+
+    .top ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        list-style: none;
+    }
+
+    #seccion-primera h1 {
+        font-size: 2.5rem;
+    }
+
+    #seccion-primera p {
+        font-size: 1.25rem;
+    }
+
+    #seccion-segunda, #seccion-tercera, #seccion-quarta, #seccion-quinta {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #seccion-segunda div, #seccion-tercera div {
+        padding: 0;
+        -ms-flex-item-align: normal;
+            -ms-grid-row-align: normal;
+            align-self: normal;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        text-align: center;
+    }
+
+    .btn, #seccion-tercera div a {
+        width: 100%;
+    }
+
+    #seccion-segunda img, #seccion-tercera img {
+        display: none;
+    }
+
+    #seccion-tercera.container {
+        width: 90%;
+        padding: 12px 0;
+    }
+
+    article > section:nth-child(4) {
+        padding: 35px 0 12px 0;
+    }
+
+    #seccion-quarta {
+        margin: 35px auto;
+    }
+
+    .col {
+        margin: 20px 30px 0.9em;
+        border: 1px solid #ffa600;
+        padding: 30px 2em;
+    }
+
+    .col p {
+        text-align: center;
+    }
+
+    #seccion-quinta {
+        text-align: center;
+    }
+
+/*Estilos del resto de las paginas*/
+
+    #pages section {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    aside {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+
+    .fila img {
+        float: none;
+        width: 100%;
+    }
+
+    .transparent {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #pages .fila.fila:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/*Aplicar los siguientes estilos cuando el tamaño del viewport sea menor o igual 659px*/
+
+@media screen and (max-width:659px) {
+    #piedepagina {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+    }
+}

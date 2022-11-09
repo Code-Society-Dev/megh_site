@@ -1,0 +1,66 @@
+ /*Estilos generales*/
+
+ html, body {
+    height: 100%;
+}
+
+body {
+    font-family: lato, sans-serif;
+    font-size: 1.09rem;
+}
+
+/*Modificar el modelo de cajas CSS*/
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+-webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/*Resetear margenes y padding*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Centrar elementos en pantalla*/
+
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/*Barra de navegacion*/
+
+#navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#main-nav {
+	display: flex;
+	list-style: none;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+#main-nav li {
+	padding: 12px 0.85em;
+}
+
+#main-nav li a {
+	color: #0f0f0f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	padding-bottom: 12px;
+}
+
+#main-nav li a:hover {
+    border-bottom: 2px solid #ff0000;
+}
